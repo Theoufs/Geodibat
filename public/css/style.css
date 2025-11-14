@@ -1,0 +1,106 @@
+/* ==========================================================================
+   Variables & Root
+   ========================================================================== */
+:root {
+    --primary-color: #2d5a27;
+    --primary-dark: #234820;
+    --accent-color: #4a9142;
+    --bg-white: #ffffff;
+    --bg-light: #f8f9fa;
+    --text-dark: #2c3e50;
+    --text-muted: #95a5a6;
+    --border-color: #dee2e6;
+    --shadow-sm: 0 2px 4px rgba(0, 0, 0, 0.05);
+    --shadow-md: 0 4px 6px rgba(0, 0, 0, 0.08);
+    --transition: all 0.3s ease;
+}
+
+/* ==========================================================================
+   Global Styles
+   ========================================================================== */
+body {
+    font-family: 'Segoe UI', system-ui, -apple-system, sans-serif;
+    background: var(--bg-light);
+    color: var(--text-dark);
+    position: relative;
+    min-height: 100vh;
+    margin-top: 100px;
+    margin-bottom: 40px;
+}
+
+/* ==========================================================================
+   Navigation
+   ========================================================================== */
+.navbar {
+    background-color: var(--bg-white);
+    box-shadow: var(--shadow-sm);
+}
+
+.navbar-brand {
+    padding: 0;
+    margin-right: 2rem;
+    color: var(--primary-color);
+}
+
+.navbar-light .navbar-nav .nav-link {
+    color: var(--text-dark) !important;
+    opacity: 0.9;
+}
+
+.navbar-light .navbar-nav .nav-link:hover,
+.navbar-light .navbar-nav .nav-link:focus {
+    color: var(--primary-color) !important;
+    opacity: 1;
+}
+
+/* ==========================================================================
+   Layout Components
+   ========================================================================== */
+.container {
+    background: var(--bg-white);
+    border-radius: 15px;
+    box-shadow: var(--shadow-md);
+    padding: 2rem;
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+}
+
+/* ==========================================================================
+   Forms & Buttons
+   ========================================================================== */
+.form-control,
+.form-select {
+    border: 1px solid var(--border-color);
+    color: var(--text-dark);
+}
+
+.form-control:focus,
+.form-select:focus {
+    border-color: var(--primary-color);
+    box-shadow: 0 0 0 0.25rem rgba(45, 90, 39, 0.15);
+}
+
+.btn-primary {
+    background-color: var(--primary-color);
+    border-color: var(--primary-color);
+    padding: 0.75rem 2rem;
+    font-weight: 500;
+    transition: var(--transition);
+    color: var(--bg-white);
+}
+
+.btn-primary:hover {
+    background-color: var(--primary-dark);
+    border-color: var(--primary-dark);
+    color: var(--bg-white);
+}
+
+/* ==========================================================================
+   Media Queries
+   ========================================================================== */
+@media (max-width: 768px) {
+    .container {
+        padding: 1rem;
+        margin: 1rem 0;
+    }
+}
