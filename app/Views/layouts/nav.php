@@ -3,21 +3,12 @@
         <a class="nav-link" href=<?="/contact"?>>Contact</a>
     </li>
     <li class="nav-item">
-        <a class="nav-link" href=<?="/services/energie"?>>Énergie</a>
+        <a class="nav-link" href=<?="/services/geometre"?>>Géomètre</a>
     </li>
     <li class="nav-item">
-        <a class="nav-link" href=<?="/services/plomberie"?>>Plomberie</a>
+        <a class="nav-link" href=<?="/services/travaux"?>>Travaux</a>
     </li>
     <li class="nav-item">
-        <a class="nav-link" href=<?="/services/securite"?>>Sécurité</a>
-    </li>
-    <li class="nav-item">
-        <a class="nav-link" href=<?="/services/immobilier"?>>Immobilier</a>
-    </li>   
-    <li class="nav-item">
-        <a class="nav-link" href=<?="/services/automobile"?>>Automobile</a>
-    </li>
-    <li class="nav-item">
-        <a class="nav-link" href=<?="/services/informatique"?>>Informatique</a>
+        <a class="nav-link" href=<?="/services/references"?>>Références</a>
     </li>
 </ul>

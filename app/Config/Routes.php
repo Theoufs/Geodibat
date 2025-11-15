@@ -40,12 +40,9 @@ $routes->get('contact', 'HomeController::contact');
 
 // Create a group for service-related routes
 $routes->group('services', function($routes) {
-    $routes->get('energie', 'HomeController::energie');
-    $routes->get('plomberie', 'HomeController::plomberie');
-    $routes->get('securite', 'HomeController::securite');
-    $routes->get('immobilier', 'HomeController::immobilier');
-    $routes->get('automobile', 'HomeController::automobile');
-    $routes->get('informatique', 'HomeController::informatique');
+    $routes->get('travaux', 'HomeController::travaux');
+    $routes->get('geometre', 'HomeController::geometre');
+    $routes->get('references', 'HomeController::references');
 });
 
 /*

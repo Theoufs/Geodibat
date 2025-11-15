@@ -11,24 +11,23 @@
                     <div class="company-card h-100 bg-white rounded-lg shadow-sm p-4">
                         <div class="card-body text-center">
                             <div class="company-logo mb-4 d-flex justify-content-center align-items-center">
-                                <img src="/uploads/illustrations/logo-NS.jpg" 
-                                     alt="Nanterre Solutions Logo" 
+                                <img src="/uploads/illustrations/geometre.jpg" 
+                                     alt="Geometre" 
                                      class="img-fluid"
                                      style="max-width: 160px; max-height: 160px; object-fit: contain;">
                             </div>
-                            <h2 class="company-title mb-3">Nanterre Solutions</h2>
+                            <h2 class="company-title mb-3">Géomètre</h2>
                             <p class="company-description mb-4">
-                                Votre partenaire local de confiance pour tous vos besoins en électricité, plomberie, 
-                                chauffage, sécurité, immobilier, automobile. Une expertise reconnue à Nanterre.
+                                Division spécialisée dans le secteur de l'immobilier pour les copropriétés depuis 1997.
                             </p>
                             <div class="service-icons mb-4">
-                                <i class="fas fa-bolt mx-2" title="Électricité"></i>
-                                <i class="fas fa-faucet mx-2" title="Plomberie"></i>
-                                <i class="fas fa-shield-alt mx-2" title="Sécurité"></i>
-                                <i class="fas fa-house-user mx-2" title="Immobilier"></i>
-                                <i class="fas fa-car mx-2" title="Automobile"></i>
+                                <i class="fas fa-building mx-2" title="Copropriété"></i>
+                                <i class="fas fa-clipboard-check mx-2" title="État des lieux"></i>
+                                <i class="fas fa-drafting-compass mx-2" title="Aménagement"></i>
+                                <i class="fas fa-handshake mx-2" title="Vente"></i>
+                                <i class="fas fa-search-location mx-2" title="Recherches"></i>
                             </div>
-                            <a href="/contact" class="btn btn-primary">Contactez-nous</a>
+                            <a href="/geometre" class="btn btn-primary">En savoir plus</a>
                         </div>
                     </div>
                 </div>
@@ -38,25 +37,22 @@
                     <div class="company-card h-100 bg-white rounded-lg shadow-sm p-4">
                         <div class="card-body text-center">
                             <div class="company-logo mb-4 d-flex justify-content-center align-items-center">
-                                <a href="https://outinnov.fr" target="_blank" class="logo-link">
-                                    <img src="/uploads/illustrations/outinnov_logo.png" 
-                                         alt="Outinnov Logo" 
-                                         class="img-fluid"
-                                         style="max-width: 160px; max-height: 160px; object-fit: contain;">
-                                </a>
+                                <img src="/uploads/illustrations/travaux.jpg" 
+                                     alt="Travaux" 
+                                     class="img-fluid"
+                                     style="max-width: 160px; max-height: 160px; object-fit: contain;">
                             </div>
-                            <h2 class="company-title mb-3">Outinnov</h2>
+                            <h2 class="company-title mb-3">Travaux</h2>
                             <p class="company-description mb-4">
-                                Expert en solutions informatiques et développement web. 
-                                Une approche innovante pour vos projets numériques.
+                                Etudes de faisabilité, encadrement et réalisation de travaux en batiments.
                             </p>
                             <div class="service-icons mb-4">
-                                <i class="fas fa-laptop-code mx-2" title="Développement"></i>
-                                <i class="fas fa-network-wired mx-2" title="Infrastructure"></i>
-                                <i class="fas fa-database mx-2" title="Solutions Cloud"></i>
-                                <i class="fas fa-mobile-alt mx-2" title="Applications Mobiles"></i>
+                                <i class="fas fa-hammer mx-2" title="Rénovation"></i>
+                                <i class="fas fa-hard-hat mx-2" title="Artisanat"></i>
+                                <i class="fas fa-city mx-2" title="Immeubles"></i>
+                                <i class="fas fa-ruler-combined mx-2" title="Architectes"></i>
                             </div>
-                            <a href="https://outinnov.fr" class="btn btn-primary" target="_blank">Visiter le partenaire</a>
+                            <a href="/travaux" class="btn btn-primary">En savoir plus</a>
                         </div>
                     </div>
                 </div>
@@ -64,277 +60,124 @@
         </div>
     </div>
 
+    <!-- Outinnov Footer -->
+    <footer class="outinnov-footer">
+        <div class="container">
+            <div class="row align-items-center justify-content-center text-center">
+                <div class="col-md-8">
+                    <div class="d-flex align-items-center justify-content-center">
+                        <a href="https://www.outinnov.fr" target="_blank" class="footer-logo-link">
+                            <img src="/uploads/illustrations/outinnov_logo.png" 
+                                 alt="Outinnov" 
+                                 class="footer-logo">
+                        </a>
+                        <div class="footer-text ms-3">
+                            <small class="text-muted">Site développé par <strong>Outinnov</strong> • Solutions Web, Excel & Énergie</small>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+
     <style>
+        /* Light Blue Color Scheme */
+        :root {
+            --primary-blue: #3498db;
+            --light-blue: #85c1e9;
+            --very-light-blue: #ebf5fb;
+            --bg-gradient: linear-gradient(135deg, #ebf5fb 0%, #d6eaf8 50%, #ffffff 100%);
+            --text-dark: #2c3e50;
+            --text-muted: #7f8c8d;
+            --white: #ffffff;
+            --shadow: 0 8px 32px rgba(52, 152, 219, 0.15);
+            --hover-shadow: 0 12px 40px rgba(52, 152, 219, 0.25);
+        }
+
+        /* Global Styles */
         .companies-section {
-            min-height: auto;
-            padding-top: 2rem;
-            display: flex;
-            align-items: center;
+            background: var(--bg-gradient);
+            padding: 4rem 0;
         }
         
         .company-card {
-            transition: transform 0.3s ease, box-shadow 0.3s ease;
-            border: 1px solid rgba(0,0,0,0.1);
+            background: var(--white);
+            border: 1px solid rgba(52, 152, 219, 0.1);
+            border-radius: 16px;
+            transition: all 0.3s ease;
+            box-shadow: var(--shadow);
         }
         
         .company-card:hover {
-            transform: translateY(-5px);
-            box-shadow: 0 10px 20px rgba(0,0,0,0.1);
+            transform: translateY(-8px);
+            box-shadow: var(--hover-shadow);
         }
 
         .company-title {
-            font-size: 2rem;
-            font-weight: 600;
+            font-size: 2.2rem;
+            font-weight: 700;
             color: var(--text-dark);
+            margin-bottom: 1rem;
         }
 
         .company-description {
             color: var(--text-muted);
             font-size: 1.1rem;
-            line-height: 1.6;
+            line-height: 1.7;
+            margin-bottom: 1.5rem;
         }
 
         .service-icons {
-            font-size: 1.5rem;
-            color: var(--primary);
+            font-size: 1.6rem;
+            color: var(--primary-blue);
+            margin-bottom: 2rem;
         }
 
         .service-icons i {
-            transition: transform 0.2s ease;
+            transition: all 0.3s ease;
+            padding: 0.5rem;
+            border-radius: 50%;
+            background: rgba(52, 152, 219, 0.1);
+            margin: 0.25rem;
         }
 
         .service-icons i:hover {
             transform: scale(1.2);
+            background: var(--light-blue);
+            color: var(--white);
         }
 
-        @media (max-width: 991.98px) {
-            .companies-section {
-                min-height: auto;
-                padding: 4rem 0;
-            }
-        }
-
-        .intro-section {
-            padding: 3rem 0;
-            background: linear-gradient(135deg, var(--bg-subtle) 0%, var(--bg-white) 100%);
-        }
-
-        .intro-content {
-            max-width: 800px;
-            margin: 0 auto;
-            padding: 1rem;
-        }
-
-        .intro-title {
-            font-size: 2.75rem;
-            color: var(--text-dark);
-            margin-bottom: 1.5rem;
+        /* Button Styling */
+        .btn-primary {
+            background: var(--primary-blue);
+            border: 2px solid var(--primary-blue);
+            color: var(--white);
+            padding: 0.75rem 2rem;
+            border-radius: 25px;
             font-weight: 600;
+            transition: all 0.3s ease;
         }
 
-        .intro-description {
-            font-size: 1.2rem;
-            color: var(--text-muted);
-            line-height: 1.6;
-            margin-bottom: 2rem;
+        .btn-primary:hover {
+            background: var(--light-blue);
+            border-color: var(--light-blue);
+            transform: translateY(-2px);
         }
 
+        /* Responsive Design */
         @media (max-width: 768px) {
-            .intro-section {
+            .companies-section {
                 padding: 3rem 0;
             }
             
-            .intro-title {
-                font-size: 2rem;
+            .company-title {
+                font-size: 1.8rem;
             }
 
-            .intro-description {
-                font-size: 1.1rem;
+            .service-icons {
+                font-size: 1.4rem;
             }
-        }
-    </style>
-
-    <!-- Skills Showcase -->
-    <section class="skills-showcase">
-        <div class="container">
-            <h2 class="section-title">Nos Expertises</h2>
-            <div class="skills-grid">
-                <!-- Electrical & Smart Home -->
-                <a href="/services/energie" class="skill-link">
-                    <div class="skill-card">
-                        <div class="skill-icon-wrapper">
-                            <div class="skill-icon-placeholder">
-                                <div class="placeholder-overlay">
-                                    <i class="fas fa-bolt"></i>
-                                </div>
-                            </div>
-                        </div>
-                        <h3>Energie & Domotique</h3>
-                        <p>Optimisation énergétique, installation, dépannage pour votre habitat intelligent</p>
-                    </div>
-                </a>
-
-                <!-- Plumbing & Heating -->
-                <a href="/services/plomberie" class="skill-link">
-                    <div class="skill-card">
-                        <div class="skill-icon-wrapper">
-                            <div class="skill-icon-placeholder">
-                                <div class="placeholder-overlay">
-                                    <i class="fas fa-faucet"></i>
-                                </div>
-                            </div>
-                        </div>
-                        <h3>Plomberie & Chauffage</h3>
-                        <p>Services de qualité pour vos installations sanitaires et systèmes de chauffage</p>
-                    </div>
-                </a>
-
-                <!-- Security Systems -->
-                <a href="/services/securite" class="skill-link">
-                    <div class="skill-card">
-                        <div class="skill-icon-wrapper">
-                            <div class="skill-icon-placeholder">
-                                <div class="placeholder-overlay">
-                                    <i class="fas fa-shield-alt"></i>
-                                </div>
-                            </div>
-                        </div>
-                        <h3>Sécurité & Surveillance</h3>
-                        <p>Protection et tranquillité d'esprit avec nos solutions de sécurité modernes</p>
-                    </div>
-                </a>
-
-                <!-- Real Estate -->
-                <a href="/services/immobilier" class="skill-link">
-                    <div class="skill-card">
-                        <div class="skill-icon-wrapper">
-                            <div class="skill-icon-placeholder">
-                                <div class="placeholder-overlay">
-                                    <i class="fas fa-house"></i>
-                                </div>
-                            </div>
-                        </div>
-                        <h3>Immobilier</h3>
-                        <p>Conseils pour vos projets immobiliers : achat/vente, estimations, aménagements</p>
-                    </div>
-                </a>
-
-                <!-- Automobile -->
-                <a href="/services/automobile" class="skill-link">
-                    <div class="skill-card">
-                        <div class="skill-icon-wrapper">
-                            <div class="skill-icon-placeholder">
-                                <div class="placeholder-overlay">
-                                    <i class="fas fa-car"></i>
-                                </div>
-                            </div>
-                        </div>
-                        <h3>Automobile</h3>
-                        <p>Mobilisation de professionnels pour la réparation de votre véhicule : diagnostic, entretien, réparations</p>
-                    </div>
-                </a>
-
-                <!-- Informatique -->
-                <a href="/services/informatique" class="skill-link">
-                    <div class="skill-card">
-                        <div class="skill-icon-wrapper">
-                            <div class="skill-icon-placeholder">
-                                <div class="placeholder-overlay">
-                                    <i class="fas fa-laptop"></i>
-                                </div>  
-                            </div>
-                        </div>
-                        <h3>Informatique</h3>
-                        <p>Dépannages, conseils en solutions matérielles, réseau,  sites Webs avec Outinnov</p>
-                    </div>
-                </a>
-            </div>
-        </div>
-    </section>
-
-    <!-- Quality Section -->
-    <section class="quality-section">
-        <div class="container">
-            <div class="row align-items-center">
-                <div class="col-lg-6">
-                    <div class="quality-content">
-                        <h2>Notre Engagement Qualité</h2>
-                        <p>Reconnus par la ville de Nanterre pour notre excellence de service et notre engagement local.</p>
-                        <div class="quality-features">
-                            <div class="feature-item">
-                                <i class="fas fa-check-circle"></i>
-                                <span>Service professionnel garanti</span>
-                            </div>
-                            <div class="feature-item">
-                                <i class="fas fa-clock"></i>
-                                <span>Intervention rapide</span>
-                            </div>
-                            <div class="feature-item">
-                                <i class="fas fa-map-marker-alt"></i>
-                                <span>Proximité locale</span>
-                            </div>
-                        </div>
-                        <a href="https://www.nanterre.fr/" class="btn btn-outline-accent">
-                            Ville de Nanterre
-                            <i class="fas fa-arrow-right"></i>
-                        </a>
-                    </div>
-                </div>
-                <div class="col-lg-6">
-                    <div class="quality-image">
-                        <img src="/uploads/illustrations/charte_qualite_nanterre.png" 
-                             alt="Charte Qualité Nanterre" 
-                             class="img-fluid">
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-
-
-    <style>
-        /* Background and container styling */
-        .bg-super-light {
-            background-color: #f8f9fa;
-        }
-
-        /* Company cards styling */
-        .company-card {
-            transition: transform 0.3s ease, box-shadow 0.3s ease;
-            border: 1px solid rgba(0,0,0,0.05);
-            background: #ffffff;
-            border-radius: 12px;
-            height: 100%;
-            display: flex;
-            flex-direction: column;
-        }
-
-        .company-card:hover {
-            transform: translateY(-5px);
-            box-shadow: 0 4px 12px rgba(0,0,0,0.05);
-        }
-
-        .company-card.main-card {
-            border-color: var(--accent);
-        }
-
-        .card-body {
-            padding: 2rem 1.5rem;
-            display: flex;
-            flex-direction: column;
-            flex: 1;
-        }
-
-        .company-logo {
-            max-width: 120px;
-            height: auto;
-            object-fit: contain;
-            margin: 1rem auto 0;
-            padding: 0.5rem;
-            border-radius: 8px;
-            background: #ffffff;
-            box-shadow: 0 2px 8px rgba(0,0,0,0.05);
-            transition: transform 0.3s ease;
         }
         @keyframes fadeInUp {
             from {
@@ -761,64 +604,33 @@
             transition: all 0.3s ease;
         }
 
-        /* Quality Section */
-        .quality-section {
-            padding: 3rem 0;
-            background: linear-gradient(135deg, var(--bg-subtle) 0%, var(--bg-white) 100%);
+        /* Subtle Footer Styling */
+        .outinnov-footer {
+            background: transparent;
+            border-top: 1px solid rgba(52, 152, 219, 0.1);
+            padding: 1rem 0;
+            margin-top: 0;
         }
 
-        .quality-content {
-            padding: 1.5rem;
+        .footer-logo {
+            height: 28px;
+            opacity: 0.8;
+            transition: opacity 0.3s ease;
         }
 
-        .quality-content h2 {
-            font-size: 2.25rem;
-            color: var(--text-dark);
-            margin-bottom: 1rem;
-            font-weight: 600;
+        .footer-logo-link:hover .footer-logo {
+            opacity: 1;
         }
 
-        .quality-content p {
+        .footer-text {
+            font-size: 0.75rem;
             color: var(--text-muted);
-            font-size: 1.1rem;
-            margin-bottom: 1.5rem;
-            line-height: 1.5;
+            margin-left: 0.75rem;
         }
 
-        .quality-features {
-            display: grid;
-            gap: 0.75rem;
-            margin-bottom: 1.5rem;
-        }
-
-        .feature-item {
-            display: flex;
-            align-items: center;
-            gap: 1rem;
-            font-size: 1.1rem;
-            color: var(--text-dark);
-        }
-
-        .feature-item i {
-            color: var(--accent);
-            font-size: 1.25rem;
-        }
-
-        .quality-image {
-            border-radius: 16px;
-            overflow: hidden;
-            box-shadow: 0 8px 30px rgba(0,0,0,0.1);
-        }
-
-        .quality-image img {
-            width: 100%;
-            height: auto;
-            object-fit: cover;
-            transition: transform 0.3s ease;
-        }
-
-        .quality-image:hover img {
-            transform: scale(1.02);
+        .footer-text strong {
+            color: var(--primary-blue);
+            font-weight: 500;
         }
 
         /* Additional Styling */

@@ -6,28 +6,32 @@
         <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css">
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
         <link rel="stylesheet" href="/css/style.css">
-        <title><?= "Nanterre-Solutions à votre service" ?></title>
+        <title><?= "Geodibat - Géomètre et travaux" ?></title>
         <style>
+            /* Light Blue Color Scheme for All Pages */
             :root {
-                --bg-light: #ffffff;
-                --bg-white: #ffffff;
-                --bg-subtle: #f8f9fa;
-                --text-dark: #2d3748;
-                --text-muted: #718096;
-                --accent: #2d5a27;
-                --accent-light: #4a9142;
-                --border-color: #edf2f7;
+                --primary-blue: #3498db;
+                --light-blue: #85c1e9;
+                --very-light-blue: #ebf5fb;
+                --bg-gradient: linear-gradient(135deg, #ebf5fb 0%, #d6eaf8 50%, #ffffff 100%);
+                --text-dark: #2c3e50;
+                --text-muted: #7f8c8d;
+                --white: #ffffff;
+                --shadow: 0 8px 32px rgba(52, 152, 219, 0.15);
+                --hover-shadow: 0 12px 40px rgba(52, 152, 219, 0.25);
+                --border-color: rgba(52, 152, 219, 0.2);
                 --header-height: 70px;
             }
 
             body {
-                background: var(--bg-light);
+                background: var(--bg-gradient);
                 color: var(--text-dark);
                 line-height: 1.6;
                 padding-top: var(--header-height);
                 min-height: 100vh;
                 display: flex;
                 flex-direction: column;
+                font-family: 'Segoe UI', system-ui, -apple-system, sans-serif;
             }
 
             /* Typography */
@@ -42,6 +46,7 @@
                 color: var(--text-dark);
                 margin-bottom: 1rem;
                 font-size: 1rem;
+                line-height: 1.6;
             }
 
             /* Layout */
@@ -58,16 +63,16 @@
 
             /* Cards and content zones */
             .card {
-                background: var(--bg-white);
+                background: var(--white);
                 border: 1px solid var(--border-color);
-                border-radius: 8px;
-                box-shadow: 0 2px 4px rgba(0,0,0,0.04);
-                transition: transform 0.2s ease, box-shadow 0.2s ease;
+                border-radius: 16px;
+                box-shadow: var(--shadow);
+                transition: all 0.3s ease;
             }
 
             .card:hover {
-                transform: translateY(-2px);
-                box-shadow: 0 4px 8px rgba(0,0,0,0.08);
+                transform: translateY(-5px);
+                box-shadow: var(--hover-shadow);
             }
 
             /* Card content */
@@ -96,10 +101,10 @@
 
             /* Navigation */
             .navbar {
-                background: var(--bg-white);
-                border-bottom: 1px solid var(--border-color);
+                background: var(--white);
+                border-bottom: 2px solid var(--border-color);
                 padding: 0.75rem 0;
-                box-shadow: 0 1px 3px rgba(0,0,0,0.04);
+                box-shadow: var(--shadow);
                 height: var(--header-height);
             }
 
@@ -120,7 +125,7 @@
             }
 
             .brand-text {
-                color: var(--text-dark);
+                color: var(--primary-blue);
                 font-size: 1.2rem;
                 font-weight: 600;
             }
@@ -131,54 +136,100 @@
             }
 
             .navbar-collapse {
-                background: var(--bg-white);
+                background: var(--white);
             }
 
             .navbar-light .navbar-nav .nav-link {
                 color: var(--text-dark);
                 padding: 0.5rem 1rem;
                 font-weight: 500;
-                transition: color 0.2s ease;
+                transition: all 0.3s ease;
+                border-radius: 20px;
             }
 
             .navbar-light .navbar-nav .nav-link:hover {
-                color: var(--accent);
+                color: var(--primary-blue);
+                background: rgba(52, 152, 219, 0.1);
+                transform: translateY(-1px);
             }
 
             /* Buttons */
             .btn-primary {
-                background-color: var(--accent);
-                border-color: var(--accent);
-                padding: 0.5rem 1.5rem;
-                font-weight: 500;
-                transition: all 0.2s ease;
+                background: var(--primary-blue);
+                border: 2px solid var(--primary-blue);
+                color: var(--white);
+                padding: 0.75rem 1.5rem;
+                border-radius: 25px;
+                font-weight: 600;
+                transition: all 0.3s ease;
             }
 
             .btn-primary:hover {
-                background-color: var(--accent-light);
-                border-color: var(--accent-light);
-                transform: translateY(-1px);
-                box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+                background: var(--light-blue);
+                border-color: var(--light-blue);
+                transform: translateY(-2px);
+                box-shadow: var(--shadow);
+            }
+
+            .btn-secondary {
+                background: transparent;
+                border: 2px solid var(--primary-blue);
+                color: var(--primary-blue);
+                padding: 0.75rem 1.5rem;
+                border-radius: 25px;
+                font-weight: 600;
+                transition: all 0.3s ease;
+            }
+
+            .btn-secondary:hover {
+                background: var(--primary-blue);
+                color: var(--white);
+                transform: translateY(-2px);
             }
 
             /* Language selector */
             #languages .btn {
-                background: var(--bg-white);
+                background: var(--white);
                 border: 1px solid var(--border-color);
                 color: var(--text-dark);
+                border-radius: 20px;
+                transition: all 0.3s ease;
+            }
+
+            #languages .btn:hover {
+                border-color: var(--primary-blue);
+                color: var(--primary-blue);
+            }
+
+            /* Content sections */
+            .section {
+                padding: 4rem 0;
+            }
+
+            .section-light {
+                background: var(--white);
+            }
+
+            .section-gradient {
+                background: var(--bg-gradient);
             }
 
             /* Text utility classes */
             .text-muted {
-                color: #6c757d !important;
+                color: var(--text-muted) !important;
                 opacity: 1;
             }
             
             .text-secondary {
-                color: #95a5a6 !important;
+                color: var(--text-muted) !important;
                 opacity: 1;
             }
 
+            .text-primary {
+                color: var(--primary-blue) !important;
+            }
+
+            /* Responsive Design */
             @media (max-width: 768px) {
                 .container-fluid {
                     padding-left: 1rem;
@@ -207,6 +258,10 @@
                 .main-content {
                     padding: 1rem 0;
                 }
+
+                .section {
+                    padding: 3rem 0;
+                }
             }
         </style>
     </head>
@@ -215,10 +270,6 @@
             <nav class="navbar navbar-expand-sm navbar-light">
                 <div class="container-fluid px-4">
                     <a class="navbar-brand d-flex align-items-center" href=<?= "/" ?>>
-                        <img src="/uploads/illustrations/logo-NS.jpg" 
-                             alt="NS"
-                             title="Nanterre-Solutions"
-                             class="navbar-logo">
                         <span class="brand-text">
                             <i class="fas fa-home"></i>
                         </span>

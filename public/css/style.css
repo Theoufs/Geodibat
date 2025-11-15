@@ -2,16 +2,16 @@
    Variables & Root
    ========================================================================== */
 :root {
-    --primary-color: #2d5a27;
-    --primary-dark: #234820;
-    --accent-color: #4a9142;
+    --primary-color: #3498db;
+    --primary-dark: #2980b9;
+    --accent-color: #85c1e9;
     --bg-white: #ffffff;
-    --bg-light: #f8f9fa;
+    --bg-light: #ebf5fb;
     --text-dark: #2c3e50;
-    --text-muted: #95a5a6;
-    --border-color: #dee2e6;
-    --shadow-sm: 0 2px 4px rgba(0, 0, 0, 0.05);
-    --shadow-md: 0 4px 6px rgba(0, 0, 0, 0.08);
+    --text-muted: #7f8c8d;
+    --border-color: rgba(52, 152, 219, 0.2);
+    --shadow-sm: 0 2px 8px rgba(52, 152, 219, 0.1);
+    --shadow-md: 0 4px 12px rgba(52, 152, 219, 0.15);
     --transition: all 0.3s ease;
 }
 
@@ -20,7 +20,7 @@
    ========================================================================== */
 body {
     font-family: 'Segoe UI', system-ui, -apple-system, sans-serif;
-    background: var(--bg-light);
+    background: linear-gradient(135deg, #ebf5fb 0%, #d6eaf8 50%, #ffffff 100%);
     color: var(--text-dark);
     position: relative;
     min-height: 100vh;

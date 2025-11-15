@@ -16,28 +16,16 @@ class HomeController extends BaseController
     public function contact() {
         return view('contact', $this->data);                        // Display page view
     }
-
-    public function energie() {
-        return view('services/energie', $this->data);                        // Display page view
+    public function references() {
+        return view('services/references', $this->data);                        // Display page view
     }
 
-    public function plomberie() {
-        return view('services/plomberie', $this->data);                        // Display page view
+    public function travaux() {
+        return view('services/travaux', $this->data);                        // Display page view
     }
 
-    public function securite() {
-        return view('services/securite', $this->data);                        // Display page view
+    public function geometre() {
+        return view('services/geometre', $this->data);                        // Display page view
     }
 
-    public function immobilier() {
-        return view('services/immobilier', $this->data);                        // Display page view
-    }
-
-    public function automobile() {
-        return view('services/automobile', $this->data);                        // Display page view
-    }
-
-    public function informatique() {
-        return view('services/informatique', $this->data);                        // Display page view
-    }
 }
