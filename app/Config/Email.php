@@ -8,12 +8,12 @@ class Email extends BaseConfig {
     /**
      * @var string
      */
-    public $fromEmail = "server@outinnov.fr";
+    public $fromEmail = "";
 
     /**
      * @var string
      */
-    public $fromName = "Outinnov.fr";
+    public $fromName = "";
 
     /**
      * @var string
@@ -46,21 +46,21 @@ class Email extends BaseConfig {
      *
      * @var string
      */
-    public $SMTPHost = "ssl0.ovh.net";
+    public $SMTPHost = "";
 
     /**
      * SMTP Username
      *
      * @var string
      */
-    public $SMTPUser = "server@outinnov.fr";
+    public $SMTPUser = "";
 
     /**
      * SMTP Password
      *
      * @var string
      */
-    public $SMTPPass = "OutinnovServerAutomat3";
+    public $SMTPPass = "";
 
     /**
      * SMTP Port
