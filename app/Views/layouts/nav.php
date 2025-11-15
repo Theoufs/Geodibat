@@ -8,7 +8,4 @@
     <li class="nav-item">
         <a class="nav-link" href=<?="/services/travaux"?>>Travaux</a>
     </li>
-    <li class="nav-item">
-        <a class="nav-link" href=<?="/services/references"?>>Références</a>
-    </li>
 </ul>

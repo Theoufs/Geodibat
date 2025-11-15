@@ -386,98 +386,84 @@
             background-color: #f8f9fa;
         }
 
-        /* Company cards styling */
+        /* Clean Company Card Styling */
         .company-card {
-            transition: transform 0.3s ease;
-            background: transparent;
+            background: var(--white);
+            border: 1px solid rgba(52, 152, 219, 0.1);
+            border-radius: 16px;
+            transition: all 0.3s ease;
+            box-shadow: var(--shadow);
             height: 100%;
-            display: flex;
-            flex-direction: column;
-            padding: 1.5rem;
         }
-
+        
         .company-card:hover {
-            transform: translateY(-5px);
+            transform: translateY(-8px);
+            box-shadow: var(--hover-shadow);
         }
 
-        .company-card.main-card {
-            background: rgba(var(--accent-rgb), 0.03);
-            border-radius: 12px;
-        }
-
-        .card-body {
-            padding: 1.5rem 1rem;
-            display: flex;
-            flex-direction: column;
-            flex: 1;
-        }
-
+        /* Company Logo Styling - Fixed for Mobile */
         .company-logo {
-            height: 160px;
             display: flex;
             align-items: center;
             justify-content: center;
             margin-bottom: 1.5rem;
+            width: 100%;
+            height: 160px;
         }
 
         .company-logo img {
+            max-width: 160px;
+            max-height: 160px;
+            width: auto;
+            height: auto;
+            object-fit: contain;
             transition: transform 0.3s ease;
         }
 
-        .logo-link {
+        /* Card Body Centering */
+        .card-body {
             display: flex;
+            flex-direction: column;
             align-items: center;
-            justify-content: center;
-            transition: transform 0.3s ease;
+            text-align: center;
+            padding: 2rem 1.5rem;
+            height: 100%;
         }
 
-        .logo-link:hover img {
-            transform: scale(1.05);
-        }
-
-        .company-logo.main-logo {
-            max-width: 140px;
-        }
-
-        .card-title {
-            font-weight: 600;
-            margin-bottom: 1rem;
-            color: var(--text-dark);
-        }
-
-        .card-text {
-            color: #6c757d;
-            font-size: 0.95rem;
-            line-height: 1.5;
-            margin-bottom: 1.5rem;
-            flex: 1;
-        }
-
-        .badge {
-            font-size: 0.85rem;
-            padding: 0.5rem 1rem;
-            font-weight: 500;
-        }
-
-        /* Adjust vertical spacing */
-        .company-section {
-            padding: 4rem 0;
-        }
-
-        /* Mobile adjustments */
+        /* Mobile Responsive Fixes */
         @media (max-width: 768px) {
             .company-logo {
-                max-width: 100px;
-                margin-top: 0.5rem;
+                height: 140px;
+                margin-bottom: 1rem;
             }
-            .company-card {
-                margin-bottom: 1.5rem;
+
+            .company-logo img {
+                max-width: 140px;
+                max-height: 140px;
             }
+
             .card-body {
                 padding: 1.5rem 1rem;
             }
-            .card-text {
+
+            .company-title {
+                font-size: 1.6rem;
+                margin-bottom: 0.75rem;
+            }
+
+            .company-description {
+                font-size: 1rem;
                 margin-bottom: 1rem;
+            }
+
+            .service-icons {
+                font-size: 1.2rem;
+                margin-bottom: 1.5rem;
+            }
+
+            .service-icons i {
+                padding: 0.4rem;
+                margin: 0.2rem;
             }
         }
 

@@ -1,0 +1,1081 @@
+<?= $this->extend('layouts/main.php');?>
+<?= $this->section('content'); ?>
+    <!-- Hero Section -->
+    <section class="hero-section">
+        <div class="container">
+            <div class="row align-items-center">
+                <div class="col-lg-6">
+                    <h1 class="hero-title">Services Géomètre</h1>
+                    <p class="hero-description">
+                        Cette division est assurée et encadrée par un géomètre, expert en copropriété, 
+                        exerçant dans le domaine d'expertises privées et judiciaires depuis 1997. 
+                        Formé auprès d'experts juridiques et emplois auprès d'experts métiers d'expertises.
+                    </p>
+                    <div class="hero-highlights">
+                        <div class="highlight-item">
+                            <i class="fas fa-award"></i>
+                            <span>Expert agréé depuis 1997</span>
+                        </div>
+                        <div class="highlight-item">
+                            <i class="fas fa-balance-scale"></i>
+                            <span>Expertises privées et judiciaires</span>
+                        </div>
+                        <div class="highlight-item">
+                            <i class="fas fa-building"></i>
+                            <span>Spécialisé en copropriété</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-6">
+                    <div class="hero-image">
+                        <img src="/uploads/illustrations/geometre.jpg" 
+                             alt="Services Géomètre Expert" 
+                             class="img-fluid rounded-lg shadow">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Services Overview -->
+    <section class="services-section">
+        <div class="container">
+            <div class="text-center mb-5">
+                <h2 class="section-title">Nos domaines d'expertise</h2>
+                <p class="section-subtitle">Les principaux types de dossiers traités dans cette division</p>
+            </div>
+            
+            <div class="row g-4">
+                <!-- Copropriété Management -->
+                <div class="col-md-6 col-lg-4">
+                    <div class="service-card">
+                        <div class="service-icon">
+                            <i class="fas fa-users-cog"></i>
+                        </div>
+                        <h3>Règlement de Copropriété</h3>
+                        <ul class="service-list">
+                            <li>Réunion et division</li>
+                            <li>Création de copropriété</li>
+                            <li>Changement de constance</li>
+                            <li>Grilles de charges</li>
+                            <li>Surélévation</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <!-- Property Assessment -->
+                <div class="col-md-6 col-lg-4">
+                    <div class="service-card">
+                        <div class="service-icon">
+                            <i class="fas fa-building"></i>
+                        </div>
+                        <h3>Mise en Copropriété</h3>
+                        <ul class="service-list">
+                            <li>Analyse juridique</li>
+                            <li>Division de bâtiment</li>
+                            <li>Répartition des charges</li>
+                            <li>Règlement de copropriété</li>
+                            <li>État descriptif de division</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <!-- Property Surveys -->
+                <div class="col-md-6 col-lg-4">
+                    <div class="service-card">
+                        <div class="service-icon">
+                            <i class="fas fa-clipboard-check"></i>
+                        </div>
+                        <h3>Plan d'État des Lieux</h3>
+                        <ul class="service-list">
+                            <li>Relevé architectural</li>
+                            <li>Diagnostic immobilier</li>
+                            <li>Constat d'état</li>
+                            <li>Documentation technique</li>
+                            <li>Rapport détaillé</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <!-- Development Plans -->
+                <div class="col-md-6 col-lg-4">
+                    <div class="service-card">
+                        <div class="service-icon">
+                            <i class="fas fa-drafting-compass"></i>
+                        </div>
+                        <h3>Plan d'Aménagement</h3>
+                        <ul class="service-list">
+                            <li>Projet de rénovation</li>
+                            <li>Plans architecte (1/50ème, 1/25ème)</li>
+                            <li>Maquettisme professionnel</li>
+                            <li>Conception sur mesure</li>
+                            <li>Optimisation d'espace</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <!-- Interior Planning -->
+                <div class="col-md-6 col-lg-4">
+                    <div class="service-card">
+                        <div class="service-icon">
+                            <i class="fas fa-home"></i>
+                        </div>
+                        <h3>Plan d'Intérieur</h3>
+                        <ul class="service-list">
+                            <li>Plans 1/100ème et état de surfaces</li>
+                            <li>Surfaces privatives et utiles</li>
+                            <li>Surfaces habitables et pondérées</li>
+                            <li>Locatives et fiscales</li>
+                            <li>Optimisation foncière</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <!-- Sales & Rental -->
+                <div class="col-md-6 col-lg-4">
+                    <div class="service-card">
+                        <div class="service-icon">
+                            <i class="fas fa-handshake"></i>
+                        </div>
+                        <h3>Vente et Location</h3>
+                        <ul class="service-list">
+                            <li>Plans pour appartement</li>
+                            <li>Documentation maison</li>
+                            <li>Dossier château et propriétés</li>
+                            <li>Évaluation immobilière</li>
+                            <li>Support commercial</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Specialized Research Section -->
+    <section class="research-section">
+        <div class="container">
+            <div class="row align-items-center">
+                <div class="col-lg-6">
+                    <div class="research-content">
+                        <h2>Recherches Spécialisées</h2>
+                        <p class="lead">
+                            Nos recherches historiques et administratives couvrent un large spectre 
+                            d'investigations techniques et juridiques.
+                        </p>
+                        <ul class="feature-list">
+                            <li>Étude de murs et permis de construire</li>
+                            <li>Recherches dans les archives publiques</li>
+                            <li>Investigation dans les archives privées</li>
+                            <li>Documentation historique complète</li>
+                            <li>Analyse juridique approfondie</li>
+                        </ul>
+                        <div class="expertise-badge">
+                            <i class="fas fa-search"></i>
+                            <span>Conservatoire National des Arts & Métiers</span>
+                        </div>
+                        <div class="expertise-badge">
+                            <i class="fas fa-graduation-cap"></i>
+                            <span>École des Ponts et Chaussées</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-6">
+                    <div class="research-visual">
+                        <div class="research-stats">
+                            <div class="stat-item">
+                                <div class="stat-number">25+</div>
+                                <div class="stat-label">Années d'expérience</div>
+                            </div>
+                            <div class="stat-item">
+                                <div class="stat-number">1997</div>
+                                <div class="stat-label">Début d'activité</div>
+                            </div>
+                            <div class="stat-item">
+                                <div class="stat-number">100%</div>
+                                <div class="stat-label">Expertises certifiées</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Detailed Examples Section -->
+    <section class="examples-section">
+        <div class="container">
+            <div class="text-center mb-5">
+                <h2 class="section-title">Exemples de réalisations</h2>
+                <p class="section-subtitle">Nos projets types illustrés</p>
+            </div>
+
+            <!-- Plan Type 1/100ème -->
+            <div class="example-block mb-5">
+                <div class="row align-items-center">
+                    <div class="col-lg-7">
+                        <div class="example-image-grid">
+                            <img src="/uploads/illustrations/services/plan-100eme-1.jpg" 
+                                 alt="Plan type 1/100ème - Habitation" 
+                                 class="img-fluid rounded shadow-sm">
+                        </div>
+                    </div>
+                    <div class="col-lg-5">
+                        <div class="example-content">
+                            <h3>Plan Type 1/100<sup>ème</sup> - Habitation</h3>
+                            <p class="lead">Plan de vente ou de location selon type de bien</p>
+                            <ul class="detail-list">
+                                <li><strong>Ancien et moderne</strong> - Dépôt de garantie à faire</li>
+                                <li><strong>Charges locatives</strong> - Récupérables sur locataire</li>
+                                <li><strong>Surfaces précises</strong> - Conformité juridique assurée</li>
+                                <li><strong>Documentation complète</strong> - État des lieux détaillé</li>
+                            </ul>
+                            <div class="info-badge mt-3">
+                                <i class="fas fa-ruler-combined"></i>
+                                <span>Plans architecturaux et meublés</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Plan Type 1/50ème -->
+            <div class="example-block mb-5 bg-light-section py-5">
+                <div class="row align-items-center">
+                    <div class="col-lg-5 order-lg-1 order-2">
+                        <div class="example-content">
+                            <h3>Plan Type 1/50<sup>ème</sup> avec Détails</h3>
+                            <p class="lead">Plan de vente/location réalisé sur base de relevé ou suivi de chantier</p>
+                            <ul class="detail-list">
+                                <li><strong>Rénovation ancienne loge</strong> - Conciergerie 20<sup>ème</sup> arrondissement</li>
+                                <li><strong>Détails maçonnerie</strong> - Plans au 1/25<sup>ème</sup></li>
+                                <li><strong>Habillé et coté</strong> - Construction 1991</li>
+                                <li><strong>Lot n°23</strong> - Documentation complète</li>
+                            </ul>
+                            <div class="info-badge mt-3">
+                                <i class="fas fa-drafting-compass"></i>
+                                <span>Plans détaillés avec côtes précises</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-7 order-lg-2 order-1 mb-4 mb-lg-0">
+                        <div class="example-image-grid">
+                            <img src="/uploads/illustrations/services/plan-50eme-1.jpg" 
+                                 alt="Plan type 1/50ème avec détails" 
+                                 class="img-fluid rounded shadow-sm">
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Historical Research -->
+            <div class="example-block mb-5">
+                <div class="row align-items-center">
+                    <div class="col-lg-7">
+                        <div class="example-image-grid">
+                            <img src="/uploads/illustrations/services/recherches-historiques.jpg" 
+                                 alt="Recherches historiques et archives" 
+                                 class="img-fluid rounded shadow-sm">
+                        </div>
+                    </div>
+                    <div class="col-lg-5">
+                        <div class="example-content">
+                            <h3>Recherches Historiques</h3>
+                            <p class="lead">À une demande de construction en alignement</p>
+                            <ul class="detail-list">
+                                <li><strong>Archives publiques</strong> - Mairie de Paris</li>
+                                <li><strong>Documents anciens</strong> - Permis historiques</li>
+                                <li><strong>Études de murs</strong> - Conformité construction</li>
+                                <li><strong>Rapports détaillés</strong> - Analyse juridique</li>
+                            </ul>
+                            <div class="info-badge mt-3">
+                                <i class="fas fa-archive"></i>
+                                <span>Archives privées et publiques à Paris</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Case Study: Copropriété Modification -->
+    <section class="case-study-section">
+        <div class="container">
+            <div class="case-study-card">
+                <div class="row">
+                    <div class="col-lg-6">
+                        <div class="case-study-content">
+                            <h3>Modification au Règlement de Copropriété</h3>
+                            <p class="subtitle">Immeuble construit pour l'Exposition Universelle de 1889</p>
+                            
+                            <div class="timeline-info mb-4">
+                                <div class="timeline-item">
+                                    <strong>1889</strong> - Construction initiale
+                                </div>
+                                <div class="timeline-item">
+                                    <strong>1922</strong> - Mise en copropriété
+                                </div>
+                                <div class="timeline-item">
+                                    <strong>2006-2008</strong> - Bénéfice foncier et publicité
+                                </div>
+                            </div>
+
+                            <h4 class="mt-4 mb-3">Modifications types :</h4>
+                            <ul class="modification-list">
+                                <li>Mise en copropriété d'un immeuble</li>
+                                <li>Division et création de lots</li>
+                                <li>Modification soumettant variant au syndicat</li>
+                                <li>Changement de constance de lots</li>
+                                <li>Publicité foncière</li>
+                                <li>Création grilles d'ascenseur</li>
+                                <li>Tantièmes et charges</li>
+                                <li>Création syndicat secondaire</li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="col-lg-6">
+                        <div class="case-study-image">
+                            <img src="/uploads/illustrations/services/immeuble-1889.jpg" 
+                                 alt="Immeuble Exposition Universelle 1889" 
+                                 class="img-fluid rounded shadow">
+                            <div class="image-caption">
+                                Immeuble historique - Exposition Universelle 1889
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Complex Cases Section -->
+    <section class="complex-cases-section">
+        <div class="container">
+            <h2 class="section-title text-center mb-5">Cas complexes & Expertises</h2>
+            
+            <div class="row g-4">
+                <!-- Plan Type Tertiaire -->
+                <div class="col-md-6">
+                    <div class="complex-card">
+                        <div class="complex-header">
+                            <i class="fas fa-building"></i>
+                            <h3>Plan Type 1/100<sup>ème</sup> Tertiaire</h3>
+                        </div>
+                        <div class="complex-body">
+                            <p class="lead">Intérieurs & Superficies Privatives</p>
+                            <div class="case-description">
+                                <h4>Plan de Location</h4>
+                                <p>Ensemble de plateau de bureaux de forme atypique à Montreuil</p>
+                                <p><strong>Difficulté :</strong> Forme circulaire des bureaux</p>
+                                <div class="tech-specs mt-3">
+                                    <span class="badge-tech">Bureaux circulaires</span>
+                                    <span class="badge-tech">Surfaces privatives</span>
+                                    <span class="badge-tech">Plan 1/100<sup>ème</sup></span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="image-placeholder mt-3">
+                            <img src="/uploads/illustrations/services/plan-tertiaire.jpg" 
+                                 alt="Plan tertiaire avec bureaux circulaires" 
+                                 class="img-fluid rounded">
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Conférence Surélévation -->
+                <div class="col-md-6">
+                    <div class="complex-card">
+                        <div class="complex-header">
+                            <i class="fas fa-layer-group"></i>
+                            <h3>Surélévation à Paris</h3>
+                        </div>
+                        <div class="complex-body">
+                            <p class="lead">Conférence du 26 avril 2018</p>
+                            <div class="case-description">
+                                <h4>Collaboration experte</h4>
+                                <p>En collaboration avec Maître Julien Baumgartner, avocat à la cour</p>
+                                <p><strong>Initiative :</strong> Conférence ANAVD</p>
+                                <div class="conference-details mt-3">
+                                    <div class="detail-item">
+                                        <i class="fas fa-gavel"></i>
+                                        <span>Aspects juridiques</span>
+                                    </div>
+                                    <div class="detail-item">
+                                        <i class="fas fa-hard-hat"></i>
+                                        <span>Aspects techniques</span>
+                                    </div>
+                                    <div class="detail-item">
+                                        <i class="fas fa-users"></i>
+                                        <span>Solutions PROS</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="image-placeholder mt-3">
+                            <img src="/uploads/illustrations/services/conference-surelevation.jpg" 
+                                 alt="Conférence surélévation Paris" 
+                                 class="img-fluid rounded">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CTA Section -->
+    <section class="cta-section">
+        <div class="container">
+            <div class="cta-card">
+                <div class="row align-items-center">
+                    <div class="col-lg-8">
+                        <h2>Besoin d'un géomètre expert ?</h2>
+                        <p class="lead mb-4">
+                            Plus de 25 ans d'expérience dans le domaine de l'expertise immobilière et la copropriété. 
+                            Nous vous accompagnons dans tous vos projets avec professionnalisme et précision.
+                        </p>
+                        <ul class="cta-features">
+                            <li><i class="fas fa-check-circle"></i> Expertise reconnue depuis 1997</li>
+                            <li><i class="fas fa-check-circle"></i> Formations auprès d'experts métiers</li>
+                            <li><i class="fas fa-check-circle"></i> Documentation complète et conforme</li>
+                        </ul>
+                    </div>
+                    <div class="col-lg-4 text-center">
+                        <a href="/contact" class="btn btn-primary btn-lg mb-3">
+                            <i class="fas fa-envelope me-2"></i>
+                            Nous contacter
+                        </a>
+                        <p class="contact-info">
+                            <i class="fas fa-phone"></i> 06 75 10 05 67
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <style>
+        /* Hero Section */
+        .hero-section {
+            padding: 4rem 0;
+            background: linear-gradient(135deg, var(--very-light-blue) 0%, var(--white) 100%);
+        }
+
+        .hero-title {
+            font-size: 2.75rem;
+            color: var(--text-dark);
+            margin-bottom: 1.5rem;
+            font-weight: 700;
+        }
+
+        .hero-description {
+            font-size: 1.2rem;
+            color: var(--text-muted);
+            margin-bottom: 2rem;
+            line-height: 1.6;
+        }
+
+        .hero-highlights {
+            display: flex;
+            flex-direction: column;
+            gap: 1rem;
+        }
+
+        .highlight-item {
+            display: flex;
+            align-items: center;
+            color: var(--text-dark);
+            font-weight: 500;
+        }
+
+        .highlight-item i {
+            color: var(--primary-blue);
+            margin-right: 1rem;
+            font-size: 1.25rem;
+        }
+
+        .hero-image img {
+            border-radius: 16px;
+            box-shadow: 0 10px 30px rgba(52, 152, 219, 0.15);
+        }
+
+        /* Services Section */
+        .services-section {
+            padding: 4rem 0;
+            background: var(--white);
+        }
+
+        .section-title {
+            font-size: 2.5rem;
+            color: var(--text-dark);
+            margin-bottom: 1rem;
+            font-weight: 600;
+        }
+
+        .section-subtitle {
+            font-size: 1.1rem;
+            color: var(--text-muted);
+            margin-bottom: 3rem;
+        }
+
+        .service-card {
+            background: var(--white);
+            border-radius: 16px;
+            padding: 2rem;
+            height: 100%;
+            transition: all 0.3s ease;
+            border: 1px solid rgba(52, 152, 219, 0.1);
+            box-shadow: 0 4px 20px rgba(52, 152, 219, 0.08);
+        }
+
+        .service-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 12px 35px rgba(52, 152, 219, 0.15);
+        }
+
+        .service-icon {
+            width: 64px;
+            height: 64px;
+            background: var(--very-light-blue);
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin-bottom: 1.5rem;
+        }
+
+        .service-icon i {
+            font-size: 1.75rem;
+            color: var(--primary-blue);
+        }
+
+        .service-card h3 {
+            color: var(--text-dark);
+            font-size: 1.25rem;
+            margin-bottom: 1rem;
+            font-weight: 600;
+        }
+
+        .service-list {
+            list-style: none;
+            padding: 0;
+            margin: 0;
+        }
+
+        .service-list li {
+            color: var(--text-muted);
+            margin-bottom: 0.75rem;
+            padding-left: 1.5rem;
+            position: relative;
+        }
+
+        .service-list li::before {
+            content: '→';
+            position: absolute;
+            left: 0;
+            color: var(--primary-blue);
+            font-weight: bold;
+        }
+
+        /* Research Section */
+        .research-section {
+            padding: 4rem 0;
+            background: linear-gradient(135deg, var(--very-light-blue) 0%, var(--white) 100%);
+        }
+
+        .research-content h2 {
+            color: var(--text-dark);
+            font-size: 2.25rem;
+            margin-bottom: 1rem;
+            font-weight: 600;
+        }
+
+        .research-content .lead {
+            color: var(--text-muted);
+            font-size: 1.1rem;
+            margin-bottom: 2rem;
+            line-height: 1.6;
+        }
+
+        .feature-list {
+            list-style: none;
+            padding: 0;
+            margin: 0 0 2rem 0;
+        }
+
+        .feature-list li {
+            color: var(--text-muted);
+            margin-bottom: 1rem;
+            padding-left: 1.75rem;
+            position: relative;
+        }
+
+        .feature-list li::before {
+            content: '✓';
+            position: absolute;
+            left: 0;
+            color: var(--primary-blue);
+            font-weight: bold;
+        }
+
+        .expertise-badge {
+            display: flex;
+            align-items: center;
+            background: var(--white);
+            padding: 0.75rem 1rem;
+            border-radius: 25px;
+            margin-bottom: 1rem;
+            box-shadow: 0 2px 10px rgba(52, 152, 219, 0.1);
+            border: 1px solid rgba(52, 152, 219, 0.1);
+        }
+
+        .expertise-badge i {
+            color: var(--primary-blue);
+            margin-right: 0.75rem;
+        }
+
+        .expertise-badge span {
+            color: var(--text-dark);
+            font-weight: 500;
+            font-size: 0.9rem;
+        }
+
+        /* Research Visual */
+        .research-visual {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .research-stats {
+            display: grid;
+            grid-template-columns: 1fr;
+            gap: 2rem;
+            background: var(--white);
+            padding: 3rem 2rem;
+            border-radius: 20px;
+            box-shadow: 0 10px 30px rgba(52, 152, 219, 0.15);
+        }
+
+        .stat-item {
+            text-align: center;
+        }
+
+        .stat-number {
+            font-size: 2.5rem;
+            font-weight: 700;
+            color: var(--primary-blue);
+            margin-bottom: 0.5rem;
+        }
+
+        .stat-label {
+            font-size: 0.9rem;
+            color: var(--text-muted);
+            font-weight: 500;
+        }
+
+        /* Responsive Design */
+        @media (max-width: 768px) {
+            .hero-section {
+                padding: 3rem 0;
+            }
+
+            .hero-title {
+                font-size: 2rem;
+                margin-bottom: 1rem;
+            }
+
+            .hero-description {
+                font-size: 1.1rem;
+            }
+
+            .hero-image {
+                margin-top: 2rem;
+            }
+
+            .service-card {
+                padding: 1.5rem;
+                margin-bottom: 1rem;
+            }
+
+            .research-content {
+                margin-bottom: 2rem;
+            }
+
+            .research-stats {
+                padding: 2rem 1.5rem;
+            }
+
+            .stat-number {
+                font-size: 2rem;
+            }
+
+            .section-title {
+                font-size: 2rem;
+            }
+        }
+
+        /* Examples Section */
+        .examples-section {
+            padding: 4rem 0;
+            background: var(--white);
+        }
+
+        .example-block {
+            margin-bottom: 3rem;
+        }
+
+        .bg-light-section {
+            background: var(--very-light-blue);
+            border-radius: 20px;
+        }
+
+        .example-content h3 {
+            color: var(--text-dark);
+            font-size: 1.5rem;
+            font-weight: 600;
+            margin-bottom: 1rem;
+        }
+
+        .example-content .lead {
+            color: var(--text-muted);
+            font-size: 1rem;
+            margin-bottom: 1.5rem;
+        }
+
+        .detail-list {
+            list-style: none;
+            padding: 0;
+            margin: 0;
+        }
+
+        .detail-list li {
+            color: var(--text-muted);
+            margin-bottom: 0.75rem;
+            padding-left: 1.5rem;
+            position: relative;
+            font-size: 0.95rem;
+        }
+
+        .detail-list li::before {
+            content: '•';
+            position: absolute;
+            left: 0;
+            color: var(--primary-blue);
+            font-weight: bold;
+        }
+
+        .info-badge {
+            display: inline-flex;
+            align-items: center;
+            background: var(--very-light-blue);
+            padding: 0.75rem 1rem;
+            border-radius: 25px;
+            border: 1px solid rgba(52, 152, 219, 0.1);
+        }
+
+        .info-badge i {
+            color: var(--primary-blue);
+            margin-right: 0.5rem;
+        }
+
+        .info-badge span {
+            color: var(--text-dark);
+            font-weight: 500;
+            font-size: 0.9rem;
+        }
+
+        /* Case Study Section */
+        .case-study-section {
+            padding: 4rem 0;
+            background: linear-gradient(135deg, var(--very-light-blue) 0%, var(--white) 100%);
+        }
+
+        .case-study-card {
+            background: var(--white);
+            border-radius: 20px;
+            padding: 3rem;
+            box-shadow: 0 10px 30px rgba(52, 152, 219, 0.1);
+        }
+
+        .case-study-content h3 {
+            color: var(--text-dark);
+            font-size: 1.75rem;
+            font-weight: 600;
+            margin-bottom: 0.5rem;
+        }
+
+        .case-study-content .subtitle {
+            color: var(--text-muted);
+            font-size: 1.1rem;
+            margin-bottom: 1.5rem;
+        }
+
+        .timeline-info {
+            background: var(--very-light-blue);
+            padding: 1.5rem;
+            border-radius: 12px;
+            border-left: 4px solid var(--primary-blue);
+        }
+
+        .timeline-item {
+            color: var(--text-dark);
+            padding: 0.5rem 0;
+            font-size: 0.95rem;
+        }
+
+        .timeline-item strong {
+            color: var(--primary-blue);
+        }
+
+        .modification-list {
+            list-style: none;
+            padding: 0;
+            margin: 0;
+            column-count: 2;
+            column-gap: 1.5rem;
+        }
+
+        .modification-list li {
+            color: var(--text-muted);
+            margin-bottom: 0.75rem;
+            padding-left: 1.5rem;
+            position: relative;
+            break-inside: avoid;
+            font-size: 0.9rem;
+        }
+
+        .modification-list li::before {
+            content: '→';
+            position: absolute;
+            left: 0;
+            color: var(--primary-blue);
+        }
+
+        .case-study-image {
+            position: relative;
+        }
+
+        .case-study-image img {
+            width: 100%;
+            height: auto;
+            border-radius: 12px;
+        }
+
+        .image-caption {
+            background: rgba(52, 152, 219, 0.9);
+            color: white;
+            padding: 0.75rem 1rem;
+            border-radius: 0 0 12px 12px;
+            text-align: center;
+            font-size: 0.9rem;
+            margin-top: -4px;
+        }
+
+        /* Complex Cases Section */
+        .complex-cases-section {
+            padding: 4rem 0;
+            background: var(--white);
+        }
+
+        .complex-card {
+            background: var(--white);
+            border-radius: 16px;
+            padding: 2rem;
+            height: 100%;
+            border: 1px solid rgba(52, 152, 219, 0.1);
+            box-shadow: 0 4px 20px rgba(52, 152, 219, 0.08);
+            transition: all 0.3s ease;
+        }
+
+        .complex-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 12px 35px rgba(52, 152, 219, 0.15);
+        }
+
+        .complex-header {
+            display: flex;
+            align-items: center;
+            margin-bottom: 1.5rem;
+            gap: 1rem;
+        }
+
+        .complex-header i {
+            color: var(--primary-blue);
+            font-size: 2rem;
+        }
+
+        .complex-header h3 {
+            color: var(--text-dark);
+            font-size: 1.25rem;
+            font-weight: 600;
+            margin: 0;
+        }
+
+        .complex-body .lead {
+            color: var(--text-muted);
+            font-size: 1rem;
+            margin-bottom: 1rem;
+        }
+
+        .case-description h4 {
+            color: var(--text-dark);
+            font-size: 1.1rem;
+            font-weight: 600;
+            margin-bottom: 0.75rem;
+        }
+
+        .case-description p {
+            color: var(--text-muted);
+            font-size: 0.95rem;
+            margin-bottom: 0.5rem;
+        }
+
+        .tech-specs {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 0.5rem;
+        }
+
+        .badge-tech {
+            background: var(--very-light-blue);
+            color: var(--primary-blue);
+            padding: 0.35rem 0.75rem;
+            border-radius: 15px;
+            font-size: 0.85rem;
+            font-weight: 500;
+        }
+
+        .conference-details {
+            display: flex;
+            flex-direction: column;
+            gap: 0.75rem;
+        }
+
+        .detail-item {
+            display: flex;
+            align-items: center;
+            gap: 0.75rem;
+            color: var(--text-dark);
+            font-size: 0.95rem;
+        }
+
+        .detail-item i {
+            color: var(--primary-blue);
+        }
+
+        .image-placeholder {
+            width: 100%;
+            min-height: 200px;
+            background: var(--very-light-blue);
+            border-radius: 12px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            overflow: hidden;
+        }
+
+        .image-placeholder img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+
+        /* CTA Section */
+        .cta-section {
+            padding: 4rem 0;
+            background: linear-gradient(135deg, var(--primary-blue) 0%, var(--light-blue) 100%);
+        }
+
+        .cta-card {
+            background: var(--white);
+            border-radius: 20px;
+            padding: 3rem;
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+        }
+
+        .cta-card h2 {
+            color: var(--text-dark);
+            font-size: 2rem;
+            font-weight: 600;
+            margin-bottom: 1rem;
+        }
+
+        .cta-card .lead {
+            color: var(--text-muted);
+            font-size: 1.1rem;
+            line-height: 1.6;
+        }
+
+        .cta-features {
+            list-style: none;
+            padding: 0;
+            margin: 0;
+        }
+
+        .cta-features li {
+            color: var(--text-dark);
+            margin-bottom: 0.75rem;
+            display: flex;
+            align-items: center;
+            gap: 0.75rem;
+            font-weight: 500;
+        }
+
+        .cta-features i {
+            color: var(--primary-blue);
+            font-size: 1.25rem;
+        }
+
+        .btn-lg {
+            padding: 1rem 2.5rem;
+            font-size: 1.1rem;
+            border-radius: 30px;
+        }
+
+        .contact-info {
+            color: var(--text-dark);
+            font-weight: 500;
+            font-size: 1.1rem;
+        }
+
+        .contact-info i {
+            color: var(--primary-blue);
+            margin-right: 0.5rem;
+        }
+
+        /* Additional Responsive */
+        @media (max-width: 768px) {
+            .examples-section {
+                padding: 3rem 0;
+            }
+
+            .example-content,
+            .case-study-content {
+                margin-bottom: 2rem;
+            }
+
+            .modification-list {
+                column-count: 1;
+            }
+
+            .case-study-card,
+            .cta-card {
+                padding: 2rem 1.5rem;
+            }
+
+            .complex-header {
+                flex-direction: column;
+                align-items: flex-start;
+            }
+
+            .cta-card h2 {
+                font-size: 1.75rem;
+            }
+
+            .btn-lg {
+                width: 100%;
+                margin-bottom: 1rem;
+            }
+        }
+    </style>
+<?= $this->endSection('content'); ?>

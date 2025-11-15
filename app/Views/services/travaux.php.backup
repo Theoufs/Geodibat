@@ -1,0 +1,827 @@
+<?= $this->extend('layouts/main.php');?>
+<?= $this->section('content'); ?>
+    <!-- Hero Section -->
+    <section class="hero-section">
+        <div class="container">
+            <div class="row align-items-center">
+                <div class="col-lg-6">
+                    <h1 class="hero-title">Division Travaux</h1>
+                    <p class="hero-description">
+                        Cette deuxième division « Travaux » est organisée intelligemment par les deux associés 
+                        afin d'éviter à la fois l'étude de faisabilité des travaux (activité LIE à la première 
+                        division « Géomètre expert ») et encadrement et réalisation des travaux dans le bâtiment 
+                        (notre métier).
+                    </p>
+                    <div class="hero-highlights">
+                        <div class="highlight-item">
+                            <i class="fas fa-hard-hat"></i>
+                            <span>Expertise en rénovation</span>
+                        </div>
+                        <div class="highlight-item">
+                            <i class="fas fa-ruler-combined"></i>
+                            <span>Plans et réalisation</span>
+                        </div>
+                        <div class="highlight-item">
+                            <i class="fas fa-tools"></i>
+                            <span>Suivi de chantier</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-6">
+                    <div class="hero-image">
+                        <img src="/uploads/illustrations/travaux.jpg" 
+                             alt="Division Travaux - Expertise en bâtiment" 
+                             class="img-fluid rounded-lg shadow">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Services Overview -->
+    <section class="services-section">
+        <div class="container">
+            <div class="text-center mb-5">
+                <h2 class="section-title">Nos domaines d'intervention</h2>
+                <p class="section-subtitle">Les principaux types de dossiers traités dans cette division</p>
+            </div>
+            
+            <div class="row g-4">
+                <!-- Rénovation de Logements -->
+                <div class="col-md-6 col-lg-4">
+                    <div class="service-card">
+                        <div class="service-icon">
+                            <i class="fas fa-home"></i>
+                        </div>
+                        <h3>Rénovation de Logements</h3>
+                        <ul class="service-list">
+                            <li>Secteur privé et public</li>
+                            <li>Immeubles collectifs</li>
+                            <li>Appartements et maisons</li>
+                            <li>Rénovation complète</li>
+                            <li>Mise aux normes</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <!-- Travaux Courants -->
+                <div class="col-md-6 col-lg-4">
+                    <div class="service-card">
+                        <div class="service-icon">
+                            <i class="fas fa-paint-roller"></i>
+                        </div>
+                        <h3>Travaux Courants</h3>
+                        <ul class="service-list">
+                            <li>Carrelage et faïence</li>
+                            <li>Parquet et revêtements</li>
+                            <li>Peinture et décoration</li>
+                            <li>Plomberie sanitaire</li>
+                            <li>Électricité</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <!-- Rénovation Architecte -->
+                <div class="col-md-6 col-lg-4">
+                    <div class="service-card">
+                        <div class="service-icon">
+                            <i class="fas fa-drafting-compass"></i>
+                        </div>
+                        <h3>Rénovation avec Architecte</h3>
+                        <ul class="service-list">
+                            <li>Suivi travaux d'architecte</li>
+                            <li>Réalisation de plans</li>
+                            <li>Collaboration professionnelle</li>
+                            <li>Respect des normes</li>
+                            <li>Coordination artisans</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <!-- Sous-sol et Caves -->
+                <div class="col-md-6 col-lg-4">
+                    <div class="service-card">
+                        <div class="service-icon">
+                            <i class="fas fa-warehouse"></i>
+                        </div>
+                        <h3>Rénovation Sous-sol</h3>
+                        <ul class="service-list">
+                            <li>Caves voûtées</li>
+                            <li>Assainissement</li>
+                            <li>Isolation thermique</li>
+                            <li>Aménagement d'espace</li>
+                            <li>Mise en conformité</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <!-- Immeubles Collectifs -->
+                <div class="col-md-6 col-lg-4">
+                    <div class="service-card">
+                        <div class="service-icon">
+                            <i class="fas fa-building"></i>
+                        </div>
+                        <h3>Immeubles Collectifs</h3>
+                        <ul class="service-list">
+                            <li>Mairie de Paris collaboration</li>
+                            <li>Préfecture coordination</li>
+                            <li>Police travaux</li>
+                            <li>Parties communes</li>
+                            <li>Conformité réglementaire</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <!-- Chantiers Spéciaux -->
+                <div class="col-md-6 col-lg-4">
+                    <div class="service-card">
+                        <div class="service-icon">
+                            <i class="fas fa-hammer"></i>
+                        </div>
+                        <h3>Suivi de Chantier</h3>
+                        <ul class="service-list">
+                            <li>Reportage photographique</li>
+                            <li>Documentation travaux</li>
+                            <li>Coordination métiers</li>
+                            <li>Contrôle qualité</li>
+                            <li>État des lieux</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Project Examples Section -->
+    <section class="examples-section">
+        <div class="container">
+            <div class="text-center mb-5">
+                <h2 class="section-title">Projets réalisés</h2>
+                <p class="section-subtitle">Exemples de nos réalisations</p>
+            </div>
+
+            <!-- Reportage Photographique -->
+            <div class="example-block mb-5">
+                <div class="row align-items-center">
+                    <div class="col-lg-7">
+                        <div class="example-image-grid">
+                            <img src="/uploads/illustrations/services/reportage-photo.jpg" 
+                                 alt="Reportage photographique pour constat d'état des lieux" 
+                                 class="img-fluid rounded shadow-sm">
+                        </div>
+                    </div>
+                    <div class="col-lg-5">
+                        <div class="example-content">
+                            <h3>Reportage Photographique</h3>
+                            <p class="lead">Constat d'état des lieux avant travaux</p>
+                            <ul class="detail-list">
+                                <li><strong>Maison de pêcheur</strong> - Période de la Révolution Française</li>
+                                <li><strong>Documentation complète</strong> - État initial précis</li>
+                                <li><strong>14490 Cricqueville-sur-Mer</strong> - Normandie</li>
+                                <li><strong>Suivi photographique</strong> - Avant et après</li>
+                            </ul>
+                            <div class="info-badge mt-3">
+                                <i class="fas fa-camera"></i>
+                                <span>Documentation photographique professionnelle</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Rénovation Totale Loge -->
+            <div class="example-block mb-5 bg-light-section py-5">
+                <div class="row align-items-center">
+                    <div class="col-lg-5 order-lg-1 order-2">
+                        <div class="example-content">
+                            <h3>Rénovation Totale d'une Loge</h3>
+                            <p class="lead">Une mission complète de A à Z</p>
+                            <ul class="detail-list">
+                                <li><strong>Réalisation plan 1/50<sup>ème</sup></strong> - Projet de réaménagement</li>
+                                <li><strong>Maquettisme 3D</strong> - Visualisation</li>
+                                <li><strong>Réalisation travaux</strong> - Coordination complète</li>
+                                <li><strong>Ancienne loge concierge</strong> - 20<sup>ème</sup> arrondissement Paris</li>
+                            </ul>
+                            <div class="info-badge mt-3">
+                                <i class="fas fa-project-diagram"></i>
+                                <span>De la conception à la réalisation</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-7 order-lg-2 order-1 mb-4 mb-lg-0">
+                        <div class="example-image-grid">
+                            <img src="/uploads/illustrations/services/renovation-loge.jpg" 
+                                 alt="Rénovation totale d'une loge" 
+                                 class="img-fluid rounded shadow-sm">
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Rénovation Sous-sol -->
+            <div class="example-block mb-5">
+                <div class="row align-items-center">
+                    <div class="col-lg-7">
+                        <div class="example-image-grid">
+                            <img src="/uploads/illustrations/services/renovation-sous-sol.jpg" 
+                                 alt="Rénovation totale d'un sous-sol voûté" 
+                                 class="img-fluid rounded shadow-sm">
+                        </div>
+                    </div>
+                    <div class="col-lg-5">
+                        <div class="example-content">
+                            <h3>Rénovation Sous-sol Voûté</h3>
+                            <p class="lead">Mission d'assistance à architecte</p>
+                            <ul class="detail-list">
+                                <li><strong>Réalisation plan 1/100<sup>ème</sup></strong> - Documentation technique</li>
+                                <li><strong>Relevés de chantier</strong> - Suivi journalier</li>
+                                <li><strong>Collaboration architecte</strong> - Coordination</li>
+                                <li><strong>Clichés photographiques</strong> - Traçabilité</li>
+                            </ul>
+                            <div class="info-badge mt-3">
+                                <i class="fas fa-hard-hat"></i>
+                                <span>Caves voûtées anciennes réhabilitées</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Complex Project Section -->
+    <section class="case-study-section">
+        <div class="container">
+            <div class="case-study-card">
+                <div class="row">
+                    <div class="col-lg-6">
+                        <div class="case-study-content">
+                            <h3>Rénovation Rez-de-chaussée Suite Effondrement</h3>
+                            <p class="subtitle">Mission d'expertise en collaboration avec la Mairie de Paris et Préfecture de Police</p>
+                            
+                            <div class="timeline-info mb-4">
+                                <div class="timeline-item">
+                                    <strong>Phase 1</strong> - Réalisation des plans 1/100<sup>ème</sup>
+                                </div>
+                                <div class="timeline-item">
+                                    <strong>Phase 2</strong> - Inspection des lots de copropriété
+                                </div>
+                                <div class="timeline-item">
+                                    <strong>Phase 3</strong> - Travaux journaliers en chantier
+                                </div>
+                                <div class="timeline-item">
+                                    <strong>Phase 4</strong> - Clichés photographiques documentation
+                                </div>
+                            </div>
+
+                            <h4 class="mt-4 mb-3">Spécificités :</h4>
+                            <ul class="modification-list">
+                                <li>Désordre et effondrement suite à un évènement majeur</li>
+                                <li>Dégât des eaux et infiltrations</li>
+                                <li>Coordination avec les autorités</li>
+                                <li>Respect des délais d'urgence</li>
+                                <li>Mise en sécurité immédiate</li>
+                                <li>Documentation complète</li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="col-lg-6">
+                        <div class="case-study-image">
+                            <img src="/uploads/illustrations/services/effondrement-rdc.jpg" 
+                                 alt="Rénovation suite effondrement" 
+                                 class="img-fluid rounded shadow">
+                            <div class="image-caption">
+                                Intervention d'urgence - Coordination avec les autorités
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Expertise Section -->
+    <section class="expertise-section">
+        <div class="container">
+            <div class="row align-items-center">
+                <div class="col-lg-6">
+                    <div class="expertise-content">
+                        <h2>Notre expertise terrain</h2>
+                        <p class="lead">
+                            Nos équipes interviennent sur tous types de chantiers, du diagnostic initial 
+                            à la réception des travaux, en passant par la coordination des corps de métiers.
+                        </p>
+                        <ul class="feature-list">
+                            <li>Diagnostic et faisabilité technique</li>
+                            <li>Coordination multi-métiers</li>
+                            <li>Suivi quotidien de chantier</li>
+                            <li>Respect des normes et réglementations</li>
+                            <li>Documentation photographique complète</li>
+                            <li>Relations avec les autorités (Mairie, Préfecture)</li>
+                        </ul>
+                        <div class="expertise-badge">
+                            <i class="fas fa-certificate"></i>
+                            <span>Expérience en collaboration avec les institutions</span>
+                        </div>
+                        <div class="expertise-badge">
+                            <i class="fas fa-users"></i>
+                            <span>Réseau d'artisans qualifiés</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-6">
+                    <div class="research-visual">
+                        <div class="research-stats">
+                            <div class="stat-item">
+                                <div class="stat-number">100+</div>
+                                <div class="stat-label">Projets réalisés</div>
+                            </div>
+                            <div class="stat-item">
+                                <div class="stat-number">20+</div>
+                                <div class="stat-label">Années d'expérience</div>
+                            </div>
+                            <div class="stat-item">
+                                <div class="stat-number">100%</div>
+                                <div class="stat-label">Satisfaction clients</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CTA Section -->
+    <section class="cta-section">
+        <div class="container">
+            <div class="cta-card">
+                <div class="row align-items-center">
+                    <div class="col-lg-8">
+                        <h2>Un projet de travaux en vue ?</h2>
+                        <p class="lead mb-4">
+                            De l'étude de faisabilité à la réalisation complète, notre équipe vous accompagne 
+                            dans tous vos projets de rénovation et de construction. Intervention sur Paris et région parisienne.
+                        </p>
+                        <ul class="cta-features">
+                            <li><i class="fas fa-check-circle"></i> Étude et faisabilité technique</li>
+                            <li><i class="fas fa-check-circle"></i> Coordination complète des travaux</li>
+                            <li><i class="fas fa-check-circle"></i> Suivi et documentation professionnelle</li>
+                        </ul>
+                    </div>
+                    <div class="col-lg-4 text-center">
+                        <a href="/contact" class="btn btn-primary btn-lg mb-3">
+                            <i class="fas fa-envelope me-2"></i>
+                            Nous contacter
+                        </a>
+                        <p class="contact-info">
+                            <i class="fas fa-phone"></i> 06 75 10 05 67
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <style>
+        /* Hero Section */
+        .hero-section {
+            background: linear-gradient(135deg, var(--very-light-blue) 0%, var(--light-blue) 100%);
+            padding: 80px 0;
+            margin-bottom: 60px;
+        }
+
+        .hero-title {
+            font-size: 3rem;
+            font-weight: 700;
+            color: var(--primary-blue);
+            margin-bottom: 1.5rem;
+        }
+
+        .hero-description {
+            font-size: 1.2rem;
+            line-height: 1.8;
+            color: #2c3e50;
+            margin-bottom: 2rem;
+        }
+
+        .hero-highlights {
+            display: flex;
+            gap: 2rem;
+            flex-wrap: wrap;
+        }
+
+        .highlight-item {
+            display: flex;
+            align-items: center;
+            gap: 0.75rem;
+            font-size: 1rem;
+            color: #34495e;
+        }
+
+        .highlight-item i {
+            font-size: 1.5rem;
+            color: var(--primary-blue);
+        }
+
+        .hero-image {
+            position: relative;
+            animation: float 3s ease-in-out infinite;
+        }
+
+        @keyframes float {
+            0%, 100% { transform: translateY(0); }
+            50% { transform: translateY(-10px); }
+        }
+
+        /* Services Section */
+        .services-section {
+            padding: 60px 0;
+        }
+
+        .section-title {
+            font-size: 2.5rem;
+            font-weight: 700;
+            color: var(--primary-blue);
+            margin-bottom: 1rem;
+        }
+
+        .section-subtitle {
+            font-size: 1.2rem;
+            color: #7f8c8d;
+        }
+
+        .service-card {
+            background: white;
+            border-radius: 12px;
+            padding: 2rem;
+            height: 100%;
+            transition: all 0.3s ease;
+            border: 2px solid var(--very-light-blue);
+            box-shadow: 0 2px 8px rgba(52, 152, 219, 0.1);
+        }
+
+        .service-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 8px 24px rgba(52, 152, 219, 0.2);
+            border-color: var(--light-blue);
+        }
+
+        .service-icon {
+            width: 70px;
+            height: 70px;
+            background: linear-gradient(135deg, var(--light-blue), var(--primary-blue));
+            border-radius: 12px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin-bottom: 1.5rem;
+        }
+
+        .service-icon i {
+            font-size: 2rem;
+            color: white;
+        }
+
+        .service-card h3 {
+            font-size: 1.5rem;
+            font-weight: 700;
+            color: var(--primary-blue);
+            margin-bottom: 1rem;
+        }
+
+        .service-list {
+            list-style: none;
+            padding: 0;
+            margin: 0;
+        }
+
+        .service-list li {
+            padding: 0.5rem 0;
+            color: #555;
+            position: relative;
+            padding-left: 1.5rem;
+        }
+
+        .service-list li::before {
+            content: "✓";
+            position: absolute;
+            left: 0;
+            color: var(--primary-blue);
+            font-weight: bold;
+        }
+
+        /* Examples Section */
+        .examples-section {
+            padding: 60px 0;
+            background: #f8f9fa;
+        }
+
+        .example-block {
+            margin-bottom: 4rem;
+        }
+
+        .bg-light-section {
+            background: white !important;
+            border-radius: 12px;
+            padding: 3rem 2rem !important;
+        }
+
+        .example-content h3 {
+            font-size: 2rem;
+            font-weight: 700;
+            color: var(--primary-blue);
+            margin-bottom: 1rem;
+        }
+
+        .example-content .lead {
+            font-size: 1.2rem;
+            color: #7f8c8d;
+            margin-bottom: 1.5rem;
+        }
+
+        .detail-list {
+            list-style: none;
+            padding: 0;
+            margin: 0;
+        }
+
+        .detail-list li {
+            padding: 0.75rem 0;
+            border-bottom: 1px solid #e9ecef;
+            color: #555;
+        }
+
+        .detail-list li:last-child {
+            border-bottom: none;
+        }
+
+        .info-badge {
+            display: inline-flex;
+            align-items: center;
+            gap: 0.75rem;
+            padding: 1rem 1.5rem;
+            background: linear-gradient(135deg, var(--very-light-blue), white);
+            border-radius: 8px;
+            border-left: 4px solid var(--primary-blue);
+        }
+
+        .info-badge i {
+            font-size: 1.5rem;
+            color: var(--primary-blue);
+        }
+
+        .example-image-grid img {
+            border-radius: 12px;
+            width: 100%;
+            height: auto;
+        }
+
+        /* Case Study Section */
+        .case-study-section {
+            padding: 60px 0;
+            background: linear-gradient(135deg, var(--very-light-blue) 0%, white 100%);
+        }
+
+        .case-study-card {
+            background: white;
+            border-radius: 16px;
+            padding: 3rem;
+            box-shadow: 0 10px 40px rgba(52, 152, 219, 0.15);
+        }
+
+        .case-study-content h3 {
+            font-size: 2rem;
+            font-weight: 700;
+            color: var(--primary-blue);
+            margin-bottom: 1rem;
+        }
+
+        .case-study-content .subtitle {
+            font-size: 1.1rem;
+            color: #7f8c8d;
+            margin-bottom: 2rem;
+        }
+
+        .timeline-info {
+            background: var(--very-light-blue);
+            border-radius: 8px;
+            padding: 1.5rem;
+        }
+
+        .timeline-item {
+            padding: 0.75rem 0;
+            color: #555;
+            border-bottom: 1px solid var(--light-blue);
+        }
+
+        .timeline-item:last-child {
+            border-bottom: none;
+        }
+
+        .modification-list {
+            list-style: none;
+            padding: 0;
+        }
+
+        .modification-list li {
+            padding: 0.5rem 0;
+            padding-left: 1.5rem;
+            position: relative;
+            color: #555;
+        }
+
+        .modification-list li::before {
+            content: "→";
+            position: absolute;
+            left: 0;
+            color: var(--primary-blue);
+            font-weight: bold;
+        }
+
+        .case-study-image {
+            position: relative;
+        }
+
+        .image-caption {
+            margin-top: 1rem;
+            padding: 1rem;
+            background: var(--very-light-blue);
+            border-radius: 8px;
+            text-align: center;
+            font-weight: 600;
+            color: var(--primary-blue);
+        }
+
+        /* Expertise Section */
+        .expertise-section {
+            padding: 60px 0;
+        }
+
+        .expertise-content h2 {
+            font-size: 2.5rem;
+            font-weight: 700;
+            color: var(--primary-blue);
+            margin-bottom: 1.5rem;
+        }
+
+        .feature-list {
+            list-style: none;
+            padding: 0;
+            margin: 2rem 0;
+        }
+
+        .feature-list li {
+            padding: 0.75rem 0;
+            padding-left: 2rem;
+            position: relative;
+            color: #555;
+            font-size: 1.1rem;
+        }
+
+        .feature-list li::before {
+            content: "✓";
+            position: absolute;
+            left: 0;
+            color: var(--primary-blue);
+            font-weight: bold;
+            font-size: 1.2rem;
+        }
+
+        .expertise-badge {
+            display: inline-flex;
+            align-items: center;
+            gap: 0.75rem;
+            padding: 1rem 1.5rem;
+            background: var(--very-light-blue);
+            border-radius: 8px;
+            margin-right: 1rem;
+            margin-bottom: 1rem;
+        }
+
+        .expertise-badge i {
+            color: var(--primary-blue);
+            font-size: 1.3rem;
+        }
+
+        .research-visual {
+            background: linear-gradient(135deg, var(--very-light-blue), var(--light-blue));
+            border-radius: 16px;
+            padding: 3rem;
+            height: 100%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .research-stats {
+            display: grid;
+            grid-template-columns: 1fr;
+            gap: 2rem;
+            width: 100%;
+        }
+
+        .stat-item {
+            text-align: center;
+            padding: 1.5rem;
+            background: white;
+            border-radius: 12px;
+            box-shadow: 0 4px 12px rgba(52, 152, 219, 0.15);
+        }
+
+        .stat-number {
+            font-size: 3rem;
+            font-weight: 700;
+            color: var(--primary-blue);
+            margin-bottom: 0.5rem;
+        }
+
+        .stat-label {
+            font-size: 1.1rem;
+            color: #7f8c8d;
+            font-weight: 600;
+        }
+
+        /* CTA Section */
+        .cta-section {
+            padding: 60px 0;
+            background: linear-gradient(135deg, var(--primary-blue), var(--light-blue));
+        }
+
+        .cta-card {
+            background: white;
+            border-radius: 16px;
+            padding: 3rem;
+            box-shadow: 0 10px 40px rgba(0, 0, 0, 0.2);
+        }
+
+        .cta-card h2 {
+            font-size: 2.5rem;
+            font-weight: 700;
+            color: var(--primary-blue);
+            margin-bottom: 1rem;
+        }
+
+        .cta-features {
+            list-style: none;
+            padding: 0;
+            margin: 1.5rem 0;
+        }
+
+        .cta-features li {
+            display: flex;
+            align-items: center;
+            gap: 1rem;
+            padding: 0.5rem 0;
+            font-size: 1.1rem;
+            color: #555;
+        }
+
+        .cta-features i {
+            color: var(--primary-blue);
+            font-size: 1.2rem;
+        }
+
+        .contact-info {
+            font-size: 1.1rem;
+            color: #555;
+            margin: 0;
+        }
+
+        .contact-info i {
+            color: var(--primary-blue);
+            margin-right: 0.5rem;
+        }
+
+        /* Responsive */
+        @media (max-width: 768px) {
+            .hero-title {
+                font-size: 2rem;
+            }
+
+            .hero-description {
+                font-size: 1rem;
+            }
+
+            .section-title {
+                font-size: 2rem;
+            }
+
+            .hero-highlights {
+                flex-direction: column;
+                gap: 1rem;
+            }
+
+            .cta-card h2 {
+                font-size: 1.8rem;
+            }
+
+            .stat-number {
+                font-size: 2rem;
+            }
+
+            .example-content h3 {
+                font-size: 1.5rem;
+            }
+        }
+    </style>
+<?= $this->endSection('content'); ?>
