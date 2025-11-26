@@ -27,7 +27,7 @@
                                 <i class="fas fa-handshake mx-2" title="Vente"></i>
                                 <i class="fas fa-search-location mx-2" title="Recherches"></i>
                             </div>
-                            <a href="/geometre" class="btn btn-primary">En savoir plus</a>
+                            <a href="/services/geometre" class="btn btn-primary">En savoir plus</a>
                         </div>
                     </div>
                 </div>
@@ -52,7 +52,7 @@
                                 <i class="fas fa-city mx-2" title="Immeubles"></i>
                                 <i class="fas fa-ruler-combined mx-2" title="Architectes"></i>
                             </div>
-                            <a href="/travaux" class="btn btn-primary">En savoir plus</a>
+                            <a href="/services/travaux" class="btn btn-primary">En savoir plus</a>
                         </div>
                     </div>
                 </div>
